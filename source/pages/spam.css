@@ -1,0 +1,345 @@
+. {
+    color: #ffffff;
+    padding: 24px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    font-family: "IBM Plex Sans";
+}
+
+h1 {
+    height: 52px;
+    width: 90px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 52px;
+}
+
+h2 {
+    height: 36px;
+    width: 90px;
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.material-icons {
+    font-size: 22px;
+}
+
+.upload-prompt {
+    display: inline-block;
+}
+
+.upload-prompt i {
+    padding: 0px 8px 0px 0px;
+    vertical-align: text-bottom;
+}
+
+.form-heading {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.form-middle {
+    text-align: center;
+}
+
+.ldBar-label {
+    color: #fff;
+    font-size: 0.75em;
+    font-weight: 150;
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 5px;
+    text-shadow: none;
+}
+
+.loading-scan {
+    margin-top: 30px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000), url("images/working-pattern-internet-abstract-1089438.png");
+}
+
+.processBar1 .ldBar-label:after{
+    content: "% Natural Language Analysis";
+}
+
+.processBar2 .ldBar-label:after{
+    content: "% Correlating with X-Force Exchange Data";
+}
+
+.processBar3 .ldBar-label:after{
+    content: "% Checking Reputation of IP Address";
+}
+
+.bx--file--label {
+    color: #ffffff;
+}
+
+.ckbx-circle-2 {
+    width: 10%;
+    float: left;
+}
+
+.lbl--sms {
+    width: 90%;
+    font-size: .9rem;
+    padding-top: 4px;
+}
+
+.label-progress-large {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.label-progress-medium {
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+}
+
+.label-progress-small {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.color-yel {
+    color: #FFeD25;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    vertical-align: top;
+}
+
+.bx--text-area {
+    background-color: #3f3f3f;
+    border: none;
+    min-height: 10.5rem;
+
+}
+.bx--text-area, select { font-size: 100%; }
+
+.bx--text-area:active {
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+}
+
+.bx--text-area:focus {
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+}
+
+.bx--file__drop-container {
+    border: none;
+    height: auto;
+}
+
+.bx--btn {
+    width: 100%;
+    max-width: 100%;
+}
+
+.bx--btn bx--btn--secondary {
+    justify-content: flex-start
+}
+
+.bx--file-browse-btn {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    color: #ffffff;
+    background-color: #000000;
+
+}
+
+.bx--file-filename {
+    color: #000000;
+}
+
+.bx--file__selected-file {
+    width: 100%;
+    max-width: 100%;
+}
+
+#form {
+    display: block;
+}
+
+#ocrProgress {
+    display: none;
+}
+
+#results {
+    display: none;
+}
+
+#copyEmailPanel {
+    display: none;
+}
+
+#processing {
+    display: none;
+}
+
+.bx--file-container {
+    margin-bottom: 1rem;
+}
+
+a,
+a:visited,
+a:hover {
+    font-weight: 700;
+    color: darkorange;
+    text-decoration: none;
+}
+
+.small {
+    font-size: 90%;
+}
+
+/* .stat-item h1{
+    text-align: center;
+} */
+
+.bx--tile {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000), url("images/stats-background.png");
+    height: 120px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.res--panel {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.res--panel--content {
+    width: 60%;
+    float: left;
+    margin: 45px 0px 0px 10px;
+    font-size: 2.2rem;
+    color: #000;
+}
+
+.res--panel--icon {
+    width: 40%;
+    float: right;
+    margin: 38px 20px 0px 0px;
+    text-align: right;
+    color: #000;
+}
+
+.icon-lg {
+    font-size: 3.0rem;
+}
+
+.left-spam-label {
+    float: left;
+}
+
+.right-spam-label {
+    float: right;
+}
+
+.spam-copyemail {
+    color: #09f;
+}
+
+a.spam-copyemail:hover {
+    color: #09f;
+    opacity: 0.8;
+}
+
+.copyEmailDesc {
+    margin: 5px 5px 10px 5px;
+    line-height: 1.2em;
+}
+
+.copyEmailBtn {
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+}
+
+.copyEmailClose {
+    float: right;
+}
+
+.res--action {
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    margin: 1rem;
+    line-height: 1.5rem;
+    justify-content: space-between;
+}
+
+.covidCyberTips {
+    margin-top: 1rem;
+    float: left;
+}
+
+.cyberTipHeader {
+    height: 18px;
+    width: 289px;
+    color: #808080;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.cyberTipHeader i {
+    padding: 0px 8px 0px 0px;
+    vertical-align: text-bottom;
+}
+
+.cyberTipItem {
+    margin-top: 0.5rem;
+    height: 53px;
+    width: 325px;
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.processing-title {
+    height: 70px;
+    color: #FFFFFF;
+    font-family: Phosphate;
+    width: 100%;
+    margin-left: 2.5rem;
+    line-height: 59px;
+    text-align: center;
+    background: url("images/logo-white.png") no-repeat;
+  }
+
+.processing-subtitle {
+    height: 28px;
+    color: #FFA2A2;
+    font-family: "IBM Plex Sans";
+    font-size: 21px;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .spinner-triple {
+      margin: auto;
+      border-top-color: red;
+      border-bottom-color: #F3ADF3;
+  }

@@ -1,0 +1,111 @@
+<div self="size-small center-center" id="spamdiv" data-ui-field="spamdiv">
+    <div class="bx--form-item" id="form" data-ui-field="form">
+        <div class="stats">
+            <div class="bx--tile" data-ui-field="stats"></div>
+        </div>
+        <div class="form-heading">
+            <div class="left-spam-label"><strong class="bx--file--label">Validate suspicious message</strong></div>
+            <div class= "right-spam-label">
+                <input type="checkbox" id="ckbx-sms" data-ui-field="ckbx-sms" value="0" name="ckbx-sms" draggable="false">
+                <label for="ckbx-sms" draggable="false">It’s an SMS</label>
+            </div>
+        </div>
+        <textarea data-ui-field="spamtext" id="spamtext" class="bx--text-area" rows="4" cols="50"
+            placeholder="Paste the content that you would like to validate."></textarea>
+        <div class="bx--file" data-file data-file-state-manager>
+            <label for="file-uploader" class="bx--file-browse-btn" role="button" tabindex="0">
+                <div data-file-drop-container class="bx--file__drop-container">
+                    <div class="upload-prompt">
+                        <i class="material-icons">wallpaper</i>or upload image / take a screenshot..
+                    </div>
+                    <input type="file" class="bx--file-input" id="file-uploader" data-ui-field="spamfileimage"
+                        data-file-uploader data-target="[data-file-container]"
+                        accept="image/x-png,image/jpeg,image/gif" />
+                </div>
+            </label>
+            <div data-file-container class="bx--file-container" data-ui-field="uploadedfiles"></div>
+            <button data-ui-field="checkspam" class="bx--btn bx--btn--primary check-spam" type="button">Check for
+                SPAM</button>
+        </div>
+        <div class="left-spam-label" style="margin-top: 0.5rem"><a data-ui-field="copyEmailAddress" class="spam-copyemail">or forward email to validate</a>
+        </div>
+        <div class="covidCyberTips">
+            <div class="cyberTipHeader"><i class="material-icons tipsIcon">language</i>Today's COVID Cyber Tip</div>
+            <div class="cyberTipItem" data-ui-field="cyberTipItem"></div>
+        </div>
+    </div>
+    <!-- below are hidden panels used in the Karmen app. -->
+    <div id="copyEmailPanel" class="copyEmailPanelClass" data-ui-field="copyEmailPanel" self="stretch-stretch"
+        layout="row center-center">
+        <div class="form-heading form-middle">
+            <div style="float: left"><strong class="bx--file--label label-progress-large">How to validate spam
+                    emails?</strong></div>
+            <div class="copyEmailClose" data-ui-field="emailClose"><i class="material-icons">close</i></div>
+            <br><br>
+            <div style="float: left; text-align:left;margin-top:25px;">
+                <strong class="bx--file--label label-progress-small color-yel">1. Copy Karmen's email
+                    address</strong><br><br>
+                <button data-ui-field="copyToClipboard" id="copyToClipboard"
+                    class="bx--btn bx--btn--primary copyEmailBtn" type="button"><i
+                        class="material-icons">content_copy</i>Copy email to clipboard</button>
+                <br><br><br>
+                <strong class="bx--file--label label-progress-small color-yel">2. Forward your suspicious
+                    email</strong><br><br>
+                <img src="/images/fwd-email.png">
+                <br><br><br>
+                <strong class="bx--file--label label-progress-small color-yel">3. Read the results in your email
+                    inbox</strong><br><br>
+                <table>
+                    <tr>
+                        <td>
+                            <i class="material-icons">email</i>
+                        </td>
+                        <td style="padding-left:10px;line-height: 1.2rem;">
+                            Check your inbox for an
+                            email from Karmen titled "Karmen Scan Results"
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ocrProgress" class="ocrProgressClass" data-ui-field="ocrProgress" self="stretch-stretch"
+    layout="row center-center">
+    <div class="form-heading form-middle">
+        <strong class="bx--file--label label-progress-large">Extracting text from your image.</strong>
+        <div data-preset="stripe" class="ldBar label-center" data-value="0" style="width: 100%; height: 100px;">
+        </div>
+        <div id="statusText" class="bx--file--label">Initializing API..</div>
+    </div>
+</div>
+<div self="size-small center-center" id="processing" data-ui-field="processing">
+    <div class="processing-title"></div>
+    <div class="processing-subtitle">Validating your message</div>
+    <div class="spinner-triple"></div>
+    <div class="loading-scan">
+        <div data-preset="rainbow" class="processBar1 label-center" data-value="0" style="width: 100%; height: 100px;">
+        </div>
+        <div data-preset="rainbow" class="processBar2 label-center" data-value="0" style="width: 100%; height: 100px;">
+        </div>
+        <div data-preset="rainbow" class="processBar3 label-center" data-value="0" style="width: 100%; height: 100px;">
+        </div>   
+     </div>
+</div>
+<div id="results" class="resultsClass" data-ui-field="results" self="stretch-stretch" layout="row center-center">
+    <div class="processing-title" data-ui-field="processing-title"></div>
+    <div style="text-align: center;"><strong class="bx--file--label label-progress-large">Scan Results</strong></div>
+    <br><br>
+    <div class="res--panel" data-ui-field="resultsPanel">
+        <div class="res--panel--content" data-ui-field="resultsPanelContent"></div>
+        <div class="res--panel--icon" data-ui-field="resultsPanelIcon"></div>
+    </div>
+    <div class="res--action" data-ui-field="resultsAction"></div>
+    <br>
+    <button data-ui-field="closeResults" id="closeResults" class="bx--btn bx--btn--primary copyEmailBtn"
+        type="button"><i class="material-icons">close</i>close results</button>
+</div>
+
+<span data-ui-field="count" class="todo-count"></span>
+
+</div>

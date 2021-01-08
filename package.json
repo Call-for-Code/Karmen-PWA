@@ -1,0 +1,28 @@
+{
+    "name": "karmen-pwa",
+    "version": "1.0.1",
+    "description": "Progressive Web App to support the removal of COVID SPAM.",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start-local": "http-server ./source --cors -S -C cert.pem",
+        "start": "http-server ./source --cors"
+    },
+    "keywords": [
+        "covid",
+        "html",
+        "pwa",
+        "spam",
+        "webapp"
+    ],
+    "author": "C4C Team Karmen",
+    "contributors": [],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.ibm.com/team-42/karmen-pwa/"
+    },
+    "devDependencies": {
+        "http-server": "^0.12.3"
+    }
+}

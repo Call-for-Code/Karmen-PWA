@@ -1,0 +1,26 @@
+language: node_js
+
+env:
+  global:
+    - NODE_ENV=development
+addons:
+  ssh_known_hosts: github.ibm.com
+
+branches:
+  only:
+  - master
+
+cache:
+  directories:
+  - node_modules
+  
+install:
+
+- sh <(curl -fsSL https://clis.ng.bluemix.net/install/linux)
+- bx cf install
+- bx login -a api.ng.bluemix.net -apikey $BLUEMIX_APIKEY
+- bx target --cf -o mariya -s c4c 
+- npm install
+- bx app push karmen
+
+script: echo "npm test temporarily disabled"

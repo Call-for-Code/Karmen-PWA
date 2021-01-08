@@ -1,0 +1,73 @@
+. {
+  font-family: "IBM Plex Sans";
+  overflow-x: hidden;
+  background: url("images/slideout-background.png");
+  height: 100%;
+  width: 100%;
+  opacity: 100%;
+}
+
+.content {
+  margin: 68px 10px 0px 10px;
+}
+
+hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  opacity: 100%;
+}
+
+.app-switcher {
+  position: absolute;
+  left: 10px; top: 20px;
+  width: 42px;
+  height: 38px;
+  background: #1111;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.app-switcher img {
+  height: 22px;
+  width: 22px;
+  text-align: center;
+}
+
+.header{
+  margin-top: 2rem;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.body {
+  margin-top: 0.5rem;
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.options p{
+  color: #2BB4FF;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+
+.footer p{
+  height: 13px;
+  width: 315px;
+  color: #FFFFFF;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 13px;
+  margin-bottom: 0.5rem;
+}
+
+.logos img{
+  height: 40.04px;
+  margin-right: 0.5rem;
+}

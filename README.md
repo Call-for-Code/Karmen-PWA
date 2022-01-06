@@ -72,7 +72,7 @@ As IBMers, we have the privilege of access to unparalleled knowledge, technology
 
 ![about_2](/docs/images/about_2.png)
 
-## Features
+## Features.
 
 * **P**rogressive **W**eb **A**pp
    * Responsive **touch-first** layout with:

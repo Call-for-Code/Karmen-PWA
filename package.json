@@ -23,6 +23,6 @@
         "url": "https://github.ibm.com/team-42/karmen-pwa/"
     },
     "devDependencies": {
-        "http-server": "^0.12.3"
+        "http-server": "^14.1.1"
     }
 }
